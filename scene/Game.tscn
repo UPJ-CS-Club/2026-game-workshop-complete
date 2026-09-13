@@ -1,0 +1,209 @@
+[gd_scene format=3 uid="uid://hys6wlyr6k0l"]
+
+[ext_resource type="PackedScene" uid="uid://cnwxtfo4uplh2" path="res://scene/Player.tscn" id="1_4aemu"]
+[ext_resource type="PackedScene" uid="uid://bt5jmv7p1d3in" path="res://scene/Enemy.tscn" id="2_e7hha"]
+[ext_resource type="Script" uid="uid://dr2iwsnv476fg" path="res://script/game_manager.gd" id="2_t585p"]
+[ext_resource type="Script" uid="uid://b6o4dxhix8m1w" path="res://script/enemy_mover.gd" id="3_vg7sv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e2t8q"]
+size = Vector2(64, 906)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qh6t2"]
+size = Vector2(880, 106)
+
+[sub_resource type="LabelSettings" id="LabelSettings_e2t8q"]
+font_size = 84
+
+[sub_resource type="LabelSettings" id="LabelSettings_vg7sv"]
+font_size = 36
+
+[node name="Game" type="Control" unique_id=1370801469]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="ColorRect" parent="." unique_id=137827530]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.1966739, 0.17165557, 0.3651734, 1)
+
+[node name="Player" parent="." unique_id=1728555981 instance=ExtResource("1_4aemu")]
+position = Vector2(384, 711)
+
+[node name="EnemyMover" type="Node2D" parent="." unique_id=633652724]
+script = ExtResource("3_vg7sv")
+
+[node name="Row1" type="Node2D" parent="EnemyMover" unique_id=1102708869]
+
+[node name="Enemy1" parent="EnemyMover/Row1" unique_id=1185741652 instance=ExtResource("2_e7hha")]
+position = Vector2(48, 40)
+
+[node name="Enemy2" parent="EnemyMover/Row1" unique_id=1324492330 instance=ExtResource("2_e7hha")]
+position = Vector2(144, 40)
+
+[node name="Enemy3" parent="EnemyMover/Row1" unique_id=1853663378 instance=ExtResource("2_e7hha")]
+position = Vector2(240, 40)
+
+[node name="Enemy4" parent="EnemyMover/Row1" unique_id=1818963517 instance=ExtResource("2_e7hha")]
+position = Vector2(336, 40)
+
+[node name="Enemy5" parent="EnemyMover/Row1" unique_id=1510797898 instance=ExtResource("2_e7hha")]
+position = Vector2(432, 40)
+
+[node name="Enemy6" parent="EnemyMover/Row1" unique_id=457379745 instance=ExtResource("2_e7hha")]
+position = Vector2(528, 40)
+
+[node name="Row2" type="Node2D" parent="EnemyMover" unique_id=687133342]
+position = Vector2(0, 96)
+
+[node name="Enemy1" parent="EnemyMover/Row2" unique_id=2126615671 instance=ExtResource("2_e7hha")]
+position = Vector2(48, 40)
+
+[node name="Enemy2" parent="EnemyMover/Row2" unique_id=831535267 instance=ExtResource("2_e7hha")]
+position = Vector2(144, 40)
+
+[node name="Enemy3" parent="EnemyMover/Row2" unique_id=1587877886 instance=ExtResource("2_e7hha")]
+position = Vector2(240, 40)
+
+[node name="Enemy4" parent="EnemyMover/Row2" unique_id=1830798857 instance=ExtResource("2_e7hha")]
+position = Vector2(336, 40)
+
+[node name="Enemy5" parent="EnemyMover/Row2" unique_id=820068304 instance=ExtResource("2_e7hha")]
+position = Vector2(432, 40)
+
+[node name="Enemy6" parent="EnemyMover/Row2" unique_id=1963331764 instance=ExtResource("2_e7hha")]
+position = Vector2(528, 40)
+
+[node name="Row3" type="Node2D" parent="EnemyMover" unique_id=1606066450]
+position = Vector2(0, 192)
+
+[node name="Enemy1" parent="EnemyMover/Row3" unique_id=1384438859 instance=ExtResource("2_e7hha")]
+position = Vector2(48, 40)
+
+[node name="Enemy2" parent="EnemyMover/Row3" unique_id=830507845 instance=ExtResource("2_e7hha")]
+position = Vector2(144, 40)
+
+[node name="Enemy3" parent="EnemyMover/Row3" unique_id=39049549 instance=ExtResource("2_e7hha")]
+position = Vector2(240, 40)
+
+[node name="Enemy4" parent="EnemyMover/Row3" unique_id=1074549876 instance=ExtResource("2_e7hha")]
+position = Vector2(336, 40)
+
+[node name="Enemy5" parent="EnemyMover/Row3" unique_id=516923106 instance=ExtResource("2_e7hha")]
+position = Vector2(432, 40)
+
+[node name="Enemy6" parent="EnemyMover/Row3" unique_id=1663077396 instance=ExtResource("2_e7hha")]
+position = Vector2(528, 40)
+
+[node name="Row4" type="Node2D" parent="EnemyMover" unique_id=498174894]
+position = Vector2(0, 288)
+
+[node name="Enemy1" parent="EnemyMover/Row4" unique_id=276689715 instance=ExtResource("2_e7hha")]
+position = Vector2(48, 40)
+
+[node name="Enemy2" parent="EnemyMover/Row4" unique_id=974479498 instance=ExtResource("2_e7hha")]
+position = Vector2(144, 40)
+
+[node name="Enemy3" parent="EnemyMover/Row4" unique_id=1093074236 instance=ExtResource("2_e7hha")]
+position = Vector2(240, 40)
+
+[node name="Enemy4" parent="EnemyMover/Row4" unique_id=239138059 instance=ExtResource("2_e7hha")]
+position = Vector2(336, 40)
+
+[node name="Enemy5" parent="EnemyMover/Row4" unique_id=689049072 instance=ExtResource("2_e7hha")]
+position = Vector2(432, 40)
+
+[node name="Enemy6" parent="EnemyMover/Row4" unique_id=505941152 instance=ExtResource("2_e7hha")]
+position = Vector2(528, 40)
+
+[node name="Border" type="Area2D" parent="." unique_id=562512 groups=["border"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border" unique_id=314595102]
+position = Vector2(-32, 443)
+shape = SubResource("RectangleShape2D_e2t8q")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Border" unique_id=153482592]
+position = Vector2(832, 443)
+shape = SubResource("RectangleShape2D_e2t8q")
+
+[node name="Planet" type="Area2D" parent="." unique_id=71302917 groups=["planet"]]
+position = Vector2(384, 800)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Planet" unique_id=271458997]
+position = Vector2(0, -43)
+shape = SubResource("RectangleShape2D_qh6t2")
+
+[node name="GameManager" type="CanvasLayer" parent="." unique_id=436091665 node_paths=PackedStringArray("win_text", "lose_text")]
+process_mode = 3
+layer = 100
+script = ExtResource("2_t585p")
+win_text = NodePath("Win")
+lose_text = NodePath("Lose")
+
+[node name="ScreenTint" type="ColorRect" parent="GameManager" unique_id=245934549]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5882353)
+
+[node name="Win" type="Label" parent="GameManager" unique_id=45126030]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -57.5
+offset_right = 300.0
+offset_bottom = 57.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "YOU WIN!"
+label_settings = SubResource("LabelSettings_e2t8q")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Lose" type="Label" parent="GameManager" unique_id=1874667834]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -57.5
+offset_right = 300.0
+offset_bottom = 57.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "YOU LOSE..."
+label_settings = SubResource("LabelSettings_e2t8q")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlayAgain" type="Label" parent="GameManager" unique_id=447164537]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -318.0
+offset_top = 184.0
+offset_right = 318.0
+offset_bottom = 299.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Press [SPACE] to play again!"
+label_settings = SubResource("LabelSettings_vg7sv")
+horizontal_alignment = 1
+vertical_alignment = 1

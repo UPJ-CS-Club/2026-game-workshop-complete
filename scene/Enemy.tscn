@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bt5jmv7p1d3in"]
+
+[ext_resource type="Script" uid="uid://cjbcp0e7oj4ir" path="res://script/enemy.gd" id="1_dregr"]
+[ext_resource type="Texture2D" uid="uid://ci6pjyv7xbjqn" path="res://sprites/alien blue.png" id="1_uramm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_e2t8q"]
+radius = 44.72136
+
+[node name="Enemy" type="Node2D" unique_id=1185741652]
+script = ExtResource("1_dregr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1558809950]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_uramm")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=443133306]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2067546839]
+shape = SubResource("CircleShape2D_e2t8q")
+
+[connection signal="area_entered" from="Area2D" to="." method="on_area_entered"]

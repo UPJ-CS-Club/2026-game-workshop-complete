@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cnwxtfo4uplh2"]
+
+[ext_resource type="Script" uid="uid://csiry5mummvr" path="res://script/player.gd" id="1_62i1b"]
+[ext_resource type="Texture2D" uid="uid://cfk8lanhkuqkl" path="res://sprites/ship.png" id="1_si3wx"]
+[ext_resource type="PackedScene" uid="uid://c0c0njf68manu" path="res://scene/Bullet.tscn" id="2_y30ri"]
+
+[node name="Player" type="Node2D" unique_id=1728555981 node_paths=PackedStringArray("muzzle_position")]
+script = ExtResource("1_62i1b")
+bullet_scene = ExtResource("2_y30ri")
+muzzle_position = NodePath("Muzzle")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1174300344]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_si3wx")
+
+[node name="Muzzle" type="Node2D" parent="." unique_id=761801327]
+position = Vector2(0, -30)

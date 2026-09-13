@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bacf4mb4nwbob"
+path="res://.godot/imported/magic space (OpenGameArt).ogg-0db9782f2ffba6d5e6eadd08d1684706.oggvorbisstr"
+
+[deps]
+
+source_file="res://sound/magic space (OpenGameArt).ogg"
+dest_files=["res://.godot/imported/magic space (OpenGameArt).ogg-0db9782f2ffba6d5e6eadd08d1684706.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
